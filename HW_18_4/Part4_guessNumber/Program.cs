@@ -18,13 +18,18 @@ namespace Part4_guessNumber
             To je správně!
             */
 
+
+            
             Console.WriteLine("Let's play a guessing game. You are to guess a number between 1 and 20.");
+            // hadane cislo se generuje jako nahodne v danem rozmezi 1 az 20
             Random rnd = new Random();
             int num = rnd.Next(1, 21);
             bool gameOver = false;
             int guess;
+            //zazadat o user input a overit, jestli je integer
             string userInput = "";
             bool isNumber = false;
+            // blok hadani
             do
             {
                 do
@@ -52,9 +57,9 @@ namespace Part4_guessNumber
                 {
                     Console.WriteLine("Not correct. Your guess is bigger than the number.");
                 }
-
-
             } while (gameOver == false);
+            
+            //potvrzeni a ukonceni
             Console.WriteLine($"You are correct! It was {num}.");
             Console.ReadLine();
 
