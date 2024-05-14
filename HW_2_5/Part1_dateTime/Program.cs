@@ -14,6 +14,7 @@ namespace Part1_dateTime
             // 2. Vytvoř proměnnou typu DateTime a ulož do ní svoje datum narození. Potom vypiš, kolik dnů od té doby uteklo.
 
             DateTime currentDateTime = DateTime.Now;
+            Console.WriteLine($"The current time is: {currentDateTime}");
             DateTime DOB = new DateTime(1997, 9,1);
             TimeSpan difference = currentDateTime - DOB;
             int differenceInDays = difference.Days;

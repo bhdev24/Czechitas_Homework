@@ -55,7 +55,7 @@ namespace Part3_shoppingCart
             }
             Console.WriteLine("");
             Console.WriteLine("You now have 2 breads.");
-            shoppingCart["bread"] *=2;
+            shoppingCart["bread"] += shoppingCart["bread"];
 
             foreach (KeyValuePair<string, int> item in shoppingCart)
             {
